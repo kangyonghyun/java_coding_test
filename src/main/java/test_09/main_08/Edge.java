@@ -1,6 +1,7 @@
 package test_09.main_08;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.PriorityQueue;
 
 class Edge implements Comparable<Edge> {
@@ -37,4 +38,16 @@ class Edge implements Comparable<Edge> {
         }
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Edge edge = (Edge) o;
+        return vex == edge.vex && cost == edge.cost;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vex, cost);
+    }
 }
