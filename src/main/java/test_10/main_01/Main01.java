@@ -1,5 +1,7 @@
 package test_10.main_01;
 
+import test_10.Dynamic;
+
 import java.util.Scanner;
 
 public class Main01 {
@@ -14,24 +16,14 @@ public class Main01 {
         3. 메모제이션
      */
 
-    public int solution(int n, int[] dy) {
-        dy[1] = 1;
-        dy[2] = 2;
-        for (int i = 3; i <= n; i++) {
-            dy[i] = dy[i - 2] + dy[i - 1];
-        }
-        return dy[n];
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Main01 main01 = new Main01();
-
         int n = sc.nextInt();
-        int[] dy = new int[n + 1];
 
-        System.out.println(main01.solution(n, dy));
-
+        // n + 1 길이의 다이나믹 배열 생성
+        // 배열의 마지막 인덱스가 n번째 계단에 오르는 경우의수
+        Dynamic dynamic = new Dynamic(n + 1);
+        System.out.println(dynamic.numberOfCase());
 
     }
 }
