@@ -1,7 +1,10 @@
 package test_10;
 
 import test_10.main_04.Brick;
+import test_10.main_06.Main06;
+import test_10.main_06.Question;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -59,5 +62,27 @@ public class Dynamic {
             result = Math.max(result, dy[i]);
         }
         return result;
+    }
+
+    public int maxScore(int time, List<Question> questions) {
+        dy[0] = 0;
+
+        for (Question q : questions) {
+            for (int j = time; j >= q.getTime(); j--) {
+                dy[j] = Math.max(dy[j], dy[j - q.getTime()] + q.getScore());
+            }
+        }
+        return dy[time];
+    }
+
+    public int minCount(int time, int money, Integer[] coin) {
+        Arrays.fill(dy, Integer.MAX_VALUE);
+        dy[0] = 0;
+        for (int i = 0; i < time; i++) {
+            for (int j = coin[i]; j <= money; j++) {
+                dy[j] = Math.min(dy[j], dy[j - coin[i]] + 1);
+            }
+        }
+        return dy[money];
     }
 }
