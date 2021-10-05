@@ -1,10 +1,7 @@
-package test_10.main_05;
+package dynamic.main_05;
 
-import test_10.Dynamic;
-import test_10.main_04.Main04;
+import dynamic.Dynamic;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Main05 {

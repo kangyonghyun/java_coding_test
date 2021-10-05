@@ -1,4 +1,4 @@
-package test_09.main_07;
+package greedy.main_07;
 
 import java.util.ArrayList;
 import java.util.Collections;

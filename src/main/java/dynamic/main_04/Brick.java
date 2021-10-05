@@ -1,4 +1,4 @@
-package test_10.main_04;
+package dynamic.main_04;
 
 public class Brick implements Comparable<Brick> {
 

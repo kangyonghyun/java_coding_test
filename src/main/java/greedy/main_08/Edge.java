@@ -1,4 +1,4 @@
-package test_09.main_08;
+package greedy.main_08;
 
 import java.util.List;
 import java.util.Objects;

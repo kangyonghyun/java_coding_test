@@ -1,6 +1,6 @@
-package test_10.main_03;
+package dynamic.main_03;
 
-import test_10.Dynamic;
+import dynamic.Dynamic;
 
 import java.util.Scanner;
 

@@ -1,8 +1,7 @@
-package test_10;
+package dynamic;
 
-import test_10.main_04.Brick;
-import test_10.main_06.Main06;
-import test_10.main_06.Question;
+import dynamic.main_04.Brick;
+import dynamic.main_06.Question;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -64,9 +63,21 @@ public class Dynamic {
         return result;
     }
 
+    // 거스름돈을 줄수 있는 최소 동전개수
+    public int minCount(int cnt, int money, Integer[] coin) {
+        Arrays.fill(dy, Integer.MAX_VALUE);
+        dy[0] = 0;
+        for (int i = 0; i < cnt; i++) {
+            for (int j = coin[i]; j <= money; j++) {
+                dy[j] = Math.min(dy[j], dy[j - coin[i]] + 1);
+            }
+        }
+        return dy[money];
+    }
+
+    // 제한시간안에 풀수 있는 문제의 최대 점수
     public int maxScore(int time, List<Question> questions) {
         dy[0] = 0;
-
         for (Question q : questions) {
             for (int j = time; j >= q.getTime(); j--) {
                 dy[j] = Math.max(dy[j], dy[j - q.getTime()] + q.getScore());
@@ -75,14 +86,4 @@ public class Dynamic {
         return dy[time];
     }
 
-    public int minCount(int time, int money, Integer[] coin) {
-        Arrays.fill(dy, Integer.MAX_VALUE);
-        dy[0] = 0;
-        for (int i = 0; i < time; i++) {
-            for (int j = coin[i]; j <= money; j++) {
-                dy[j] = Math.min(dy[j], dy[j - coin[i]] + 1);
-            }
-        }
-        return dy[money];
-    }
 }

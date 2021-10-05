@@ -1,4 +1,4 @@
-package test_10.main_06;
+package dynamic.main_06;
 
 public class Question {
 

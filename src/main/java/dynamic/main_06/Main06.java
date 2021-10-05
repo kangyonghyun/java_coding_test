@@ -1,6 +1,6 @@
-package test_10.main_06;
+package dynamic.main_06;
 
-import test_10.Dynamic;
+import dynamic.Dynamic;
 
 import java.util.ArrayList;
 import java.util.List;
