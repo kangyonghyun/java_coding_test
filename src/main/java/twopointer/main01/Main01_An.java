@@ -2,7 +2,7 @@ package twopointer.main01;
 
 import java.util.*;
 
-public class Main02_An {
+public class Main01_An {
 
     /*
         1. 정렬된 오름차순 배열 2개
@@ -16,8 +16,8 @@ public class Main02_An {
         int m = sc.nextInt();
         int[] arr2 = createArr(sc, m);
 
-        Main02_An main02_An = new Main02_An();
-        for (int i : main02_An.solution(n, arr1, m, arr2)) {
+        Main01_An main01_An = new Main01_An();
+        for (int i : main01_An.solution(n, arr1, m, arr2)) {
             System.out.print(i + " ");
         }
     }
