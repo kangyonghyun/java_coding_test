@@ -1,10 +1,7 @@
-package test_09.main_07;
+package greedy.main_07;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainTest {
 

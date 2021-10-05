@@ -1,7 +1,7 @@
-package test_10;
+package dynamic;
 
 import org.junit.jupiter.api.Test;
-import test_10.main_04.Brick;
+import dynamic.main_04.Brick;
 
 import java.util.Arrays;
 import java.util.List;

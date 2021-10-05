@@ -1,6 +1,5 @@
-package test_09.main_08;
+package greedy.main_08;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
