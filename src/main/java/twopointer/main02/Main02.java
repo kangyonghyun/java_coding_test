@@ -1,7 +1,5 @@
 package twopointer.main02;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.*;
 
 public class Main02 {
