@@ -1,4 +1,4 @@
-package twopointer.main01;
+package twopointers.main01;
 
 import java.util.*;
 
