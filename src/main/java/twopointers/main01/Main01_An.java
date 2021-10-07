@@ -33,7 +33,6 @@ public class Main01_An {
                 answer.add(arr2[p2++]);
             }
         }
-
         while (p1 < n) {
             answer.add(arr1[p1++]);
         }

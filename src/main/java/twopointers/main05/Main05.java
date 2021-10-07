@@ -1,8 +1,8 @@
-package slidingwindow.main02;
+package twopointers.main05;
 
 import java.util.Scanner;
 
-public class Main02 {
+public class Main05 {
     /*
         1. 연속 부분수열 - 연속으로 된 수열의 합이 특정숫자가 되는 경우의 수
         2. 이중 for 문 -> 정답으로 나옴, 이상함
@@ -17,8 +17,8 @@ public class Main02 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        Main02 main02 = new Main02();
-        System.out.println(main02.solution(n, m, arr));
+        Main05 main05 = new Main05();
+        System.out.println(main05.solution(n, m, arr));
 
     }
 
