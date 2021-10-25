@@ -40,9 +40,8 @@ public class Main03 {
                         answer += 2;
                     } else {
                         stack.push(tmp);
-                        break;
                     }
-
+                    break;
                 }
             }
         }
