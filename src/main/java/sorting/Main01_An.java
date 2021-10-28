@@ -21,8 +21,6 @@ public class Main01_An {
     }
 
     private int[] solution(int n, int[] arr) {
-        int[] answer = new int[n];
-
         for (int i = 0; i < n-1; i++) {
             int idx = i;
             for (int j = i+1; j < n; j++) {
@@ -34,7 +32,6 @@ public class Main01_An {
             arr[i] = arr[idx];
             arr[idx] = tmp;
         }
-
         return arr;
     }
 
